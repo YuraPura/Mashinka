@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.scene {
+  height: 100vh;
+  background: linear-gradient(#87ceeb 60%, #90ee90 60%);
+  position: relative;
+  overflow: hidden;
+}
+
+.sun {
+  width: 80px;
+  height: 80px;
+  background: #ffd900;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  right: 100px;
+}
+
+.cloud {
+  width: 100px;
+  height: 40px;
+  background: white;
+  border-radius: 20px;
+  position: absolute;
+}
+
+.cloud1 {
+  top: 80px;
+  left: 200px;
+}
+
+.cloud2 {
+  top: 120px;
+  right: 300px;
+}
+
+.road {
+  height: 60px;
+  background: #808080;
+  position: absolute;
+  bottom: 20%;
+  width: 100%;
+}
+
+.car {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  bottom: 25%;
+  left: -150px;
+  animation: drive 3.5s forwards;
+}
+
+.car-body {
+  width: 200px;
+  height: 60px;
+  background: hsl(0, 58%, 29%);
+  position: absolute;
+  border-radius: 30px 30px 0 0;
+  bottom: 1vh;
+}
+
+.car-top {
+  width: 135px;
+  height: 50px;
+  background: hsl(0, 55%, 53%);
+  position: absolute;
+  right: 20px;
+  top: -30px;
+  border-radius: 30px 30px 0 0;
+}
+
+.window {
+  width: 30px;
+  height: 35px;
+  background: #a2d2d8;
+  position: absolute;
+  right: 45px;
+  top: -25px;
+  border-radius: 15px 15px 0 0;
+}
+.window1 {
+  width: 30px;
+  height: 35px;
+  background: #a2d2d8;
+  position: absolute;
+  right: 100px;
+  top: -25px;
+  border-radius: 15px 15px 0 0;
+}
+
+.light {
+  width: 20px;
+  height: 20px;
+  background: #ffd700;
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  border-radius: 50%;
+}
+
+.wheel {
+  width: 40px;
+  height: 40px;
+  background: #000000;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -20px;
+  animation: rotate 1s linear infinite;
+}
+
+.wheel-inner {
+  width: 20px;
+  height: 20px;
+  background: #808080;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.wheel1 {
+  left: 30px;
+}
+
+.wheel2 {
+  right: 30px;
+}
+
+@keyframes drive {
+  to {
+    left: calc(100% - 250px);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
